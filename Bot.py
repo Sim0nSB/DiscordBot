@@ -2,7 +2,8 @@ import discord
 import os
 from discord import client
 from discord.ext import commands
-from token import ACCESS_TOKEN
+from mytoken import BOT_TOKEN
+
 
 textchannel_id = 368802920306573314
 
@@ -34,23 +35,20 @@ async def leave(ctx):
 async def india(ctx):
     channel = ctx.author.voice.channel
     voice = await channel.connect()
-    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/PyBot/audio/indian-sound.mp3"))
+    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/DiscordBot/audio/indian-sound.mp3"))
     
 @bot.command()
 async def orgasm(ctx):
     channel = ctx.author.voice.channel
     voice = await channel.connect()
-    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/PyBot/audio/orgasm.mp3"))
+    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/DiscordBot/audio/orgasm.mp3"))
         
 @bot.command()
 async def windows(ctx):
     channel = ctx.author.voice.channel
     voice = await channel.connect()
-    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/PyBot/audio/windows-xp.mp3"))
-
-
-
+    voice.play(discord.FFmpegPCMAudio("/Users/simon/Documents/vsCode/Privat/DiscordBot/audio/windows-xp.mp3"))
         
 
 
-bot.run(ACCESS_TOKEN)
+bot.run(BOT_TOKEN)
