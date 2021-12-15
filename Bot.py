@@ -2,7 +2,7 @@ import discord
 import os
 from discord import client
 from discord.ext import commands
-from config import ACCESS_TOKEN
+from token import ACCESS_TOKEN
 
 textchannel_id = 368802920306573314
 
